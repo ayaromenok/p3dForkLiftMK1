@@ -5,10 +5,10 @@ module showAllStls(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
     translate([(px), (py), pz])
     rotate([rx,ry,rz])
     mirror([mx,my,mz]){  
-        heatBed_Bearing(0,0,0);
-        heatBed_Double_Barreled(100,0,0);
-        heatBed_Locomotive_Nuts(200,0,0);
-        heatBed_mean(300,0,0);
+        heatBed_Bearing(0,0,0);             //8
+        heatBed_Double_Barreled(100,0,0);   //2
+        heatBed_Locomotive_Nuts(200,0,0);   //2
+        heatBed_mean(300,0,0);              //4
         heatBed_SEPField(400,0,0);        
         idlerMount_Front(0,100,0);
         idlerMount_Main_A(100,100,0);        
@@ -29,9 +29,9 @@ module showAllStls(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
         YCarriage(0,500,0);
         YCarriage_X_Axis_Clamp_A(100,500,0);
         YCarriage_X_Axis_Clamp_B(200,500,0);
-        ZIntegrated_Clamp(0,600,0);
-        ZIntegrated_Motor_Mount(200,600,0);
-        ZIntegrated_Top(400,600,0);
+        ZIntegrated_Clamp(0,600,0);         //8
+        ZIntegrated_Motor_Mount(200,600,0); //2
+        ZIntegrated_Top(400,600,0);         //2
     }//transform
 }//module
         
